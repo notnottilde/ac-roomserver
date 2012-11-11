@@ -1,11 +1,11 @@
 p= JSON.stringify(room)
 
 h1= room.name
-p Currently Playing: #{room.info.count}/#{room.info.capacity}
+p Currently Playing: #{room.count}/#{room.capacity}
 
 h1 Users
 ul
 	each user in room.users
 		li= user
 
-a(href=room.location) Play Now
+a(href=room.url) Play Now
